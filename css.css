@@ -75,6 +75,7 @@ button{
     border: 1px solid #ccc;
     border-radius: 50px;
     overflow: hidden;
+    transform: all 0.5s;
 }
 .grap> div{
     background: #9fddc4;
