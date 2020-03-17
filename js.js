@@ -21,13 +21,22 @@ $(function(){
         boomo.fadeOut(500);
         setTimeout(function(){
             $(next).fadeIn(500);
-            },500
-        )
+        },500)
         setTimeout(function(){
             $(next_grap).animate({"width": grap_width}, 500);
         }, 500)
     })
     $("#q5").click(function(){
-        
+        let last_width = $("#loading> div").text();
+
+        $("#loading> div").animate({"width" : last_width}, 2000);
+
+        setTimeout(function(){
+            $("#loading").fadeOut(500);
+        }, 2000);
+
+        setTimeout(function(){
+            $(".result-view").fadeIn(500);
+        }, 2500);
     })
 })
