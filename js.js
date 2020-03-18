@@ -47,7 +47,7 @@ $(function(){
         let j = 0;
 
         for(let i = 0; i < total.length; i++){
-            if(max < total[i]) max = total[i];
+            if(max <= total[i]) max = total[i];
             else j++;
         }
         console.log(total.length, j, max);
