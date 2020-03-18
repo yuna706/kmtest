@@ -82,6 +82,6 @@ $(function(){
                 ex.append('<p>4차 산업혁명 시대의 선두주자로써 앱(App) 관련 문화 콘텐츠 산업 활성화를 위해 모바일앱 개발 및 화면디자인, 미디어콘텐츠 젲ㄱ 등 스마트 기기에 적합한 콘텐츠를 기획, 제작할 수 있는 앱서비스 분야의 하이브리드형 인재를 양성합니다.</p>');
                 ex.append('<br><img src="img/app1.jpg" alt="앱 서비스과 사진1"><br> <img src="img/app2.jpg" alt="앱 서비스과 사진2"> <br> <a href="http://www.kmh.hs.kr/main.php?menugrp=020400&master=html&act=page">앱서비스과 더 알아보기</a>');
                 break;
-        }
+        };
     })
 })
