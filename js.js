@@ -47,8 +47,10 @@ $(function(){
         let j = 0;
 
         for(let i = 0; i < total.length; i++){
-            if(max <= total[i]) max = total[i];
-            else j++;
+            if(max <= total[i]){
+                max = total[i];
+                j = i;
+            }
         }
         console.log(total.length, j, max);
 
@@ -61,7 +63,6 @@ $(function(){
                 ex.append('<h3>마케팅경영과에서는 경영관련 분야의 기초 전문지식과 현장 실무능력을 배우며, 세무, 회계사무 분야 도제학교를 운영합니다.</h3><br>');
                 ex.append('<p>금융, 회계, 마케팅 등 경영관련 직업 분야의 직무수행에 필요한 기초 전문지식과 현장 실무능력을 배우며, 산업현장과 교육과정을 연계하여 세무, 회계사무 분야 기업 맞춤형 인재를 기릅니다.</p>');
                 ex.append('<br><img src="img/ma1.jpg" alt="마케팅 경영과 사진1"><br> <img src="img/ma2.jpg" alt="마케팅 경영과 사진2"> <br> <a href="http://www.kmh.hs.kr/main.php?menugrp=020200&master=html&act=page">마케팅경영과 더 알아보기</a>');
-                console.log(j);
                 break;
             case 1:
                 depar.text("베이커리 카페과");
