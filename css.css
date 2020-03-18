@@ -46,6 +46,12 @@ button{
     height: 20%;
     font-size: 1.2em;
     background: #9fddc4;
+    border: none;
+    box-shadow: 0 0 5px #555;
+}
+button> p{
+    font-size: 0.5em;
+    color:#888;
 }
 .questions, .result-view, #loading{
     display: none;
@@ -135,6 +141,18 @@ button{
     height: 70%;
     overflow: scroll;
     scrollbar-width: none;
+    font-size: 0.9em;
+}
+.result-view> div> h3{
+    font-weight: normal;
+    font-size: 1.2em;
+}
+.result-view> div> a{
+    background: rgb(50, 230, 253);
+    text-decoration: none;
+    color: #fff;
+    padding: 2% 5%;
+    border-radius: 80px;
 }
 .result-view> div::-webkit-scrollbar {
     display: none;
