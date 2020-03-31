@@ -1,14 +1,6 @@
 # kmtest
 근명 학과 테스트 만들기
 
-<style>
-    h2{
-        padding: 10px 20px;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #000;
-    }
-</style>
-
 <h2>참고사이트</h2>
 <ol>
     <li><a href="https://distancingchallenge.com/">사회적거리두기 챌린지</a></li>
