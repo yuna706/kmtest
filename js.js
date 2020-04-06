@@ -29,7 +29,9 @@ $(function(){
         }, 500);
     })
 
-    $("#q5").click(function(){
+    let leng = $(".questions").length;
+    
+    $(".questions").eq(leng).click(function(){
         let last_width = $("#loading> div").text();
 
         $("#loading> div").animate({"width" : last_width}, 2000);
