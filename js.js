@@ -1,37 +1,49 @@
 $(function(){
+
+    // 시작!
     $("button").click(function(){
         $(this).fadeOut(500);
         setTimeout(function(){
             $("#q1").fadeIn(500);
-        },500);
+        },500);3
     })
 
+
+
+    let q_idx = $(".questions").length;
     let total = new Array(0,0,0,0);
 
     $(".list> li").click(function(){
+        
+        // 값 저장
         let ch = $(this).val();
         total[ch]++;
 
-        console.log(total[0],total[1],total[2],total[3]);
-
+        // 다음 페이지로 넘어가는 코드
         let boomo = $(this).parents(".questions");
         let next = boomo.next();
         let next_grap = next.find(".grap> div");
+        
+        let n_idx = boomo.index();
+        let per = (100 / q_idx) * n_idx;
+        let sosoo = per.toFixed(2);
+
+        next_grap.html(sosoo + "%");
+
         let grap_width = next_grap.text();
 
         boomo.fadeOut(500);
         setTimeout(function(){
             $(next).fadeIn(500);
-        },500);
-
-        setTimeout(function(){
             $(next_grap).animate({"width": grap_width}, 500);
-        }, 500);
-    })
+        },500);
+    });
 
-    let leng = $(".questions").length;
-    
-    $(".questions").eq(leng).click(function(){
+
+    // 마지막 문항 선택 후
+    $(".questions").eq(q_idx).click(function(){
+
+        // width 저장
         let last_width = $("#loading> div").text();
 
         $("#loading> div").animate({"width" : last_width}, 2000);
@@ -55,6 +67,9 @@ $(function(){
             }
         }
         console.log(max_bang, max);
+
+
+
 
         let depar = $(".result-view> p");
         let ex = $(".result-view> div");
