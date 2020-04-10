@@ -26,7 +26,7 @@ $(function(){
         
         let n_idx = boomo.index();
         let per = (100 / q_idx) * n_idx;
-        let sosoo = per.toFixed(2);
+        let sosoo = per.toFixed(1);
 
         next_grap.html(sosoo + "%");
 
